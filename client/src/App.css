@@ -1,0 +1,85 @@
+.layout {
+  max-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "h h h h h h h h h"
+        "n m m m m m m m m"
+        "n m m m m m m m m"
+        "n m m m m m m m m"
+        "f f f f f f f f f";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    grid-area: h;
+    border: solid 1px gray;
+
+
+}
+
+.sidebar {
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.main {
+    grid-area: m;
+    text-align: center;
+    position: relative;
+    min-height: 85vh;
+    border: solid 1px gray;
+
+}
+
+.footer {
+    grid-area: f;
+    border: solid 1px gray;
+
+}
+
+.item {
+    border: solid 1px gray;
+    border-radius:  10px ;
+    box-shadow:  gray 5px 10px 10px;
+    margin: 8px;
+    position: relative;
+    margin: 15px;
+}
+
+.date {
+    display: flex;
+    gap: 5px;
+
+}
+
+
+.btn-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    justify-content: center;
+}
+
+.todos-list {
+    margin-top: 30px;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+}
+
+.addTodo {
+    position: absolute;
+    left: 0;
+}
